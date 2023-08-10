@@ -1,0 +1,29 @@
+.nav {
+    display: none;
+    //border: 1px solid green;
+    width: 400px;
+
+    &__items {
+        //width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-cuarto;
+        display: block;
+        height: 112px;
+        padding-top: 42px;
+        &:hover {
+            border-bottom: solid 4px $color-primario;
+        }
+    }
+
+    @media (min-width: 1115px) {
+       display: block;
+    }
+}

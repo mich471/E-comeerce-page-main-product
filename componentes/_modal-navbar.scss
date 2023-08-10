@@ -1,0 +1,40 @@
+.modal-content {
+    display: none;
+    background-color: $White;
+    width: 250px;
+    height: 100%;
+    padding: 28px 24px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &__bacground {
+        //@include modal-background;
+    }
+
+    &__items {
+        //border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+        list-style: none;
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    &__link {
+        list-style: none;
+        color: $color-terciario;
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+
+    &__close-icon {
+        width: 15px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

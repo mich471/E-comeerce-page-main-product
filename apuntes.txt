@@ -1,0 +1,6 @@
+<!-- 
+  TAREA:
+    -Analizar detenidamente el diseño que proporciono fronthendMnetor.
+    -Estudiar detenidamente la maquetacion.
+    -Analizar clases con nomenclatura BEM.
+-->

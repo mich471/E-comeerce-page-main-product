@@ -1,0 +1,38 @@
+.input {
+    height: 57px;
+    padding:0 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: $color-sexto;
+    &__minus{
+        @include shangeNumber(24px, 5px);
+        background-color: $color-sexto;
+        border-radius: 4px;
+
+    }
+    &__number {
+        width: 100%;
+        border: none;
+        background-color: $color-sexto;
+        font-size: 1.2em;
+        font-weight: 700;
+        text-align: center;
+        font-family: $fuente1;
+        outline: none;
+    }
+    &__plus {
+        @include shangeNumber(19px, 3px);
+        background-color: $color-sexto;
+        border-radius: 4px;
+
+    }
+    &__button {
+        @include button;
+        @media(max-width: 1115px) {
+                margin-top: 20px;
+        }
+    }
+ 
+
+}

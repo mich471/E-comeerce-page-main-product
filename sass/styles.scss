@@ -1,0 +1,47 @@
+@import '../componentes/globals';
+@import '../componentes/header';
+@import '../componentes/navbar';
+@import '../componentes/modal-navbar';
+@import '../componentes/gallery';
+@import '../componentes/details';
+@import '../componentes/input';
+@import '../componentes/cart-modal';
+@import '../componentes/modal-gallery';
+
+
+
+.content-relative {
+    position: relative;
+}
+
+.main-container {
+    width: 375px;
+    position: relative;
+    margin: auto;
+    @media (min-width: 1115px) {
+        width: 1115px;
+    }
+}
+
+.content {
+    @media(min-width: 1115px) {
+        display: flex;
+        padding: 90px 50px;
+        gap: 124px
+    }
+}
+
+//clase para mostrar el cartModal
+.show {
+    display: block;
+}
+.menu {
+    display: block;
+}
+//clase del html dinamico del modal
+p.cart-empty {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+    color: $Black-modal;
+}

@@ -1,0 +1,15 @@
+@import '../componentes/variables';
+@import '../componentes/mixins.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $fuente1;
+  }
+
+

@@ -1,0 +1,48 @@
+.modal-gallery {
+    width: 550px;
+    position: relative;
+    &__backgroung {
+        @include modal-background;
+        display: none;
+        place-content: center;
+    }
+    &__close-container {
+        text-align: right;
+        height: 30px;
+    }
+    &__close {
+        width: 16px;
+        &:hover {
+            cursor: pointer;
+            content: url(../images/icon-close-orange.svg);
+        }
+    }
+    &__image-container {
+        background-image: url(../images/image-product-1.jpg);
+        height: 550px;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 32px;
+    }
+    &__previus {
+        @include slider-btn (275px, -15px, true);
+    }
+    &__next {
+        @include slider-btn (275px, 523px, true)
+    }
+    &__thumails {
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        margin: auto;
+    }
+
+    &__thumail {
+        width: 90px;
+        border-radius: 16px;
+        &:hover {
+            cursor: pointer;
+            border: 2px solid $color-primario;
+        }
+    }
+}

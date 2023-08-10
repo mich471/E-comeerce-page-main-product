@@ -1,0 +1,42 @@
+.gallery {
+    &__image-container {
+        width: 100%;
+        height: 300px;
+        background-image: url(../images/image-product-1.jpg);
+        background-position-y: -35px;
+        background-size: cover;
+    }
+
+    &__previus {
+      @include slider-btn (170px, 15px, false)
+    }
+
+    &__next {
+        @include slider-btn (170px, 320px, false)
+    }
+
+    &__thumails {
+        display: none;
+        @media (min-width: 1115px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__thumail {
+        width: 90px;
+        border-radius: 16px;
+        &:hover {
+            cursor: pointer;
+            border: 2px solid $color-primario;
+        }
+    }
+    @media (min-width: 1115px) {
+        width: 446px;
+        &__image-container {
+            border-radius: 16px;
+            height: 446px;
+            margin-bottom: 32px;
+            background-position-y: 0;
+        }
+    }
+}
